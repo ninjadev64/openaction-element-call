@@ -1,0 +1,16 @@
+[package]
+name = "openaction-element-call"
+authors = ["ninjadev64"]
+version = "0.1.0"
+edition = "2021"
+license = "BSD-3-Clause"
+
+[dependencies]
+log = "0.4"
+simplelog = "0.12"
+openaction = { path = "../openaction-rs" }
+serde = "1.0"
+serde_json = "1.0"
+tokio = { version = "1.37", features = ["full"] }
+tokio-tungstenite = "0.22"
+futures-util = "0.3"

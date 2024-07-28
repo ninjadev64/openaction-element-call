@@ -1,0 +1,52 @@
+{
+	"Name": "Element Call",
+	"Description": "Element Call functionality",
+	"Author": "ninjadev64",
+	"Version": "1.0.0",
+	"CodePathWin": "openaction-element-call.exe",
+	"CodePathMac": "openaction-element-call-mac",
+	"CodePathLin": "openaction-element-call",
+	"Icon": "icons/plugin",
+	"Category": "Element Call",
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.11"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		},
+		{
+			"Platform": "linux"
+		}
+	],
+	"Actions": [
+		{
+			"Icon": "icons/toggleMicOn",
+			"Name": "Toggle mic",
+			"States": [
+				{ "Image": "icons/toggleMicOn" },
+				{ "Image": "icons/toggleMicOff" }
+			],
+			"Controllers": [ "Keypad" ],
+			"DisableAutomaticStates": true,
+			"SupportedInMultiActions": true,
+			"Tooltip": "Toggle the microphone state",
+			"UUID": "com.amansprojects.elementcall.togglemic"
+		},
+		{
+			"Icon": "icons/toggleCameraOn",
+			"Name": "Toggle camera",
+			"States": [
+				{ "Image": "icons/toggleCameraOn" },
+				{ "Image": "icons/toggleCameraOff" }
+			],
+			"Controllers": [ "Keypad" ],
+			"DisableAutomaticStates": true,
+			"SupportedInMultiActions": true,
+			"Tooltip": "Toggle the camera state",
+			"UUID": "com.amansprojects.elementcall.togglecamera"
+		}
+	]
+}
