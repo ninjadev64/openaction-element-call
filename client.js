@@ -8,7 +8,7 @@
 // ==/UserScript==
 
 const openaction_init = () => {
-	const openaction_ws = new WebSocket("ws://0.0.0.0:57111");
+	const openaction_ws = new WebSocket("ws://localhost:57111");
 
 	const openaction_mic = document.querySelector("[data-testid='incall_mute']");
 	const openaction_camera = document.querySelector("[data-testid='incall_videomute']");

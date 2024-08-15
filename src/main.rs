@@ -114,7 +114,7 @@ async fn main() {
 	.unwrap();
 
 	spawn(async {
-		let server = match tokio::net::TcpListener::bind("0.0.0.0:57111").await {
+		let server = match tokio::net::TcpListener::bind("localhost:57111").await {
 			Ok(server) => server,
 			Err(error) => {
 				log::error!("{}", error);

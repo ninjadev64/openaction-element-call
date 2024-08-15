@@ -2,7 +2,7 @@
 	"Name": "Element Call",
 	"Description": "Element Call functionality",
 	"Author": "ninjadev64",
-	"Version": "1.0.0",
+	"Version": "1.0.1",
 	"CodePathWin": "openaction-element-call.exe",
 	"CodePathMac": "openaction-element-call-mac",
 	"CodePathLin": "openaction-element-call",
@@ -24,7 +24,7 @@
 	"Actions": [
 		{
 			"Icon": "icons/toggleMicOn",
-			"Name": "Toggle mic",
+			"Name": "Toggle Microphone",
 			"States": [
 				{ "Image": "icons/toggleMicOn" },
 				{ "Image": "icons/toggleMicOff" }
@@ -37,7 +37,7 @@
 		},
 		{
 			"Icon": "icons/toggleCameraOn",
-			"Name": "Toggle camera",
+			"Name": "Toggle Camera",
 			"States": [
 				{ "Image": "icons/toggleCameraOn" },
 				{ "Image": "icons/toggleCameraOff" }
