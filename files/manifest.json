@@ -2,7 +2,7 @@
 	"Name": "Element Call",
 	"Description": "Element Call functionality",
 	"Author": "ninjadev64",
-	"Version": "1.0.1",
+	"Version": "1.1.0",
 	"CodePathWin": "openaction-element-call.exe",
 	"CodePathMac": "openaction-element-call-mac",
 	"CodePathLin": "openaction-element-call",
@@ -33,7 +33,7 @@
 			"DisableAutomaticStates": true,
 			"SupportedInMultiActions": true,
 			"Tooltip": "Toggle the microphone state",
-			"UUID": "com.amansprojects.elementcall.togglemic"
+			"UUID": "me.amankhanna.elementcall.togglemic"
 		},
 		{
 			"Icon": "icons/toggleCameraOn",
@@ -46,7 +46,7 @@
 			"DisableAutomaticStates": true,
 			"SupportedInMultiActions": true,
 			"Tooltip": "Toggle the camera state",
-			"UUID": "com.amansprojects.elementcall.togglecamera"
+			"UUID": "me.amankhanna.elementcall.togglecamera"
 		}
 	]
 }

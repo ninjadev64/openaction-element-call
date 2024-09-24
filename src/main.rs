@@ -38,10 +38,10 @@ impl openaction::ActionEventHandler for ActionEventHandler {
 		outbound: &mut openaction::OutboundEventManager,
 	) -> EventHandlerResult {
 		match &event.action[..] {
-			"com.amansprojects.elementcall.togglemic" => {
+			"me.amankhanna.elementcall.togglemic" => {
 				broadcast_message("toggle_mic", outbound).await
 			}
-			"com.amansprojects.elementcall.togglecamera" => {
+			"me.amankhanna.elementcall.togglecamera" => {
 				broadcast_message("toggle_camera", outbound).await
 			}
 			_ => Ok(()),
@@ -84,18 +84,16 @@ async fn handle_message(message: Result<Message, tokio_tungstenite::tungstenite:
 
 		match &s[..] {
 			"mic_on" => {
-				set_action_to_state("com.amansprojects.elementcall.togglemic".to_owned(), 0).await
+				set_action_to_state("me.amankhanna.elementcall.togglemic".to_owned(), 0).await
 			}
 			"mic_off" => {
-				set_action_to_state("com.amansprojects.elementcall.togglemic".to_owned(), 1).await
+				set_action_to_state("me.amankhanna.elementcall.togglemic".to_owned(), 1).await
 			}
 			"camera_on" => {
-				set_action_to_state("com.amansprojects.elementcall.togglecamera".to_owned(), 0)
-					.await
+				set_action_to_state("me.amankhanna.elementcall.togglecamera".to_owned(), 0).await
 			}
 			"camera_off" => {
-				set_action_to_state("com.amansprojects.elementcall.togglecamera".to_owned(), 1)
-					.await
+				set_action_to_state("me.amankhanna.elementcall.togglecamera".to_owned(), 1).await
 			}
 			_ => (),
 		}
