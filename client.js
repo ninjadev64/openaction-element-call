@@ -21,12 +21,12 @@ const openaction_init = () => {
 	};
 
 	openaction_mic.addEventListener("click", () => setTimeout(() => {
-		if (openaction_mic.className.includes("_on_")) openaction_ws.send("mic_off");
+		if (openaction_mic.getAttribute("data-kind").toLowerCase().trim() == "primary") openaction_ws.send("mic_off");
 		else openaction_ws.send("mic_on");
 	}, 50));
 
 	openaction_camera.addEventListener("click", () => setTimeout(() => {
-		if (openaction_camera.className.includes("_on_")) openaction_ws.send("camera_off");
+		if (openaction_camera.getAttribute("data-kind").toLowerCase().trim() == "primary") openaction_ws.send("camera_off");
 		else openaction_ws.send("camera_on");
 	}, 50));
 };
