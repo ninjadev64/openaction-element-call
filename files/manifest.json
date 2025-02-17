@@ -2,7 +2,7 @@
 	"Name": "Element Call",
 	"Description": "Element Call functionality",
 	"Author": "ninjadev64",
-	"Version": "1.1.0",
+	"Version": "1.1.1",
 	"CodePathWin": "openaction-element-call.exe",
 	"CodePathMac": "openaction-element-call-mac",
 	"CodePathLin": "openaction-element-call",

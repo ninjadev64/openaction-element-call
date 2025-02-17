@@ -1,5 +1,4 @@
 use openaction::*;
-use simplelog::{CombinedLogger, ConfigBuilder, LevelFilter, WriteLogger};
 use tokio::{spawn, sync::Mutex};
 
 use futures_util::{stream::SplitSink, SinkExt, StreamExt};
@@ -102,13 +101,12 @@ async fn handle_message(message: Result<Message, tokio_tungstenite::tungstenite:
 
 #[tokio::main]
 async fn main() {
-	CombinedLogger::init(vec![WriteLogger::new(
-		LevelFilter::Debug,
-		ConfigBuilder::new()
-			.add_filter_ignore_str("tungstenite")
-			.build(),
-		std::fs::File::create("plugin.log").unwrap(),
-	)])
+	simplelog::TermLogger::init(
+		simplelog::LevelFilter::Debug,
+		simplelog::Config::default(),
+		simplelog::TerminalMode::Stdout,
+		simplelog::ColorChoice::Never,
+	)
 	.unwrap();
 
 	spawn(async {
